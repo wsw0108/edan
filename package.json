@@ -1,0 +1,41 @@
+{
+  "name": "edan",
+  "version": "1.0.0",
+  "description": "Expose options passed to app as `appInfo.options` and `app.config.appOptions`",
+  "dependencies": {
+    "egg": "^1.0.0"
+  },
+  "devDependencies": {
+    "autod": "^2.7.1",
+    "cheerio": "^0.22.0",
+    "egg-bin": "^3.1.0",
+    "egg-ci": "^1.5.0",
+    "egg-mock": "^3.2.0",
+    "eslint": "^3.18.0",
+    "eslint-config-egg": "^3.2.0",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "6, 7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wsw01098/edan.git"
+  },
+  "keywords": [
+    "egg", "egg-framework"
+  ],
+  "author": "wsw0108",
+  "license": "MIT"
+}
