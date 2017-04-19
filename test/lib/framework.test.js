@@ -11,7 +11,7 @@ describe('test/lib/framework.test.js', () => {
   before(() => {
     app = mm.app({
       baseDir: 'example',
-      appDir: 'src',
+      // appDir: 'src',
       framework: true,
       extra,
     });
