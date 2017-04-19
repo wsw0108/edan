@@ -1,7 +1,7 @@
 {
   "name": "edan",
-  "version": "1.0.1",
-  "description": "Expose options passed to app as `appInfo.options` and `app.config.appOptions`",
+  "version": "2.0.0",
+  "description": "Custom framework for maptalks based on eggjs",
   "dependencies": {
     "egg": "^1.0.0"
   },
@@ -13,6 +13,7 @@
     "egg-mock": "^3.2.0",
     "eslint": "^3.18.0",
     "eslint-config-egg": "^3.2.0",
+    "supertest": "^3.0.0",
     "webstorm-disable-index": "^1.1.2"
   },
   "main": "index.js",
@@ -35,7 +36,8 @@
     "url": "https://github.com/wsw01098/edan.git"
   },
   "keywords": [
-    "egg", "egg-framework"
+    "egg",
+    "egg-framework"
   ],
   "author": "wsw0108",
   "license": "MIT"
