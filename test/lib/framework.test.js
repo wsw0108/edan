@@ -49,4 +49,12 @@ describe('test/lib/framework.test.js', () => {
     );
     return Promise.all(cases);
   });
+
+  it('should load service', function* () {
+    const ctx = app.mockContext();
+    assert(ctx.service.service);
+    const result = yield ctx.service.service.method();
+    assert(result === 'method');
+  });
+
 });

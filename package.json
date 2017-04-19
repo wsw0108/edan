@@ -1,6 +1,6 @@
 {
   "name": "edan",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Custom framework for maptalks based on eggjs",
   "dependencies": {
     "egg": "^1.0.0"
