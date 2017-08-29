@@ -1,6 +1,6 @@
 {
   "name": "edan",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Custom framework for maptalks based on eggjs",
   "dependencies": {
     "egg": "^1.0.0"
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wsw01098/edan.git"
+    "url": "https://github.com/wsw0108/edan.git"
   },
   "keywords": [
     "egg",
