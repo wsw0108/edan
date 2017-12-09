@@ -28,16 +28,6 @@ describe('test/lib/framework.test.js', () => {
   it('should load app from appDir', () => {
     const cases = [];
     cases.push(request(app.callback())
-      .get('/generator-no-ctx')
-      .expect(200)
-      .expect('no-ctx')
-    );
-    cases.push(request(app.callback())
-      .get('/generator-has-ctx')
-      .expect(200)
-      .expect('has-ctx')
-    );
-    cases.push(request(app.callback())
       .get('/class-no-ctx')
       .expect(200)
       .expect('no-ctx')
@@ -50,10 +40,10 @@ describe('test/lib/framework.test.js', () => {
     return Promise.all(cases);
   });
 
-  it('should load service', function* () {
+  it('should load service', async () => {
     const ctx = app.mockContext();
     assert(ctx.service.service);
-    const result = yield ctx.service.service.method();
+    const result = await ctx.service.service.method();
     assert(result === 'method');
   });
 

@@ -1,11 +1,12 @@
-module.exports = app => {
-  class ClassController extends app.Controller {
-    * noctx() {
-      this.ctx.body = 'no-ctx';
-    }
-    * hasctx(ctx) {
-      ctx.body = 'has-ctx';
-    }
+const Controller = require('egg').Controller;
+
+class ClassController extends Controller {
+  async noctx() {
+    this.ctx.body = 'no-ctx';
   }
-  return ClassController;
+  async hasctx(ctx) {
+    ctx.body = 'has-ctx';
+  }
 }
+
+module.exports = ClassController;
